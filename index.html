@@ -25,6 +25,10 @@
         font-family: "Poppins", sans-serif;
       }
 
+      .text-gray {
+        color: gray;
+      }
+
       .left {
         font-size: 1.5rem;
       }
@@ -48,7 +52,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 80px 0;
+        margin: 130px 0;
       }
       .firstSection > div {
         width: 30%;
@@ -79,15 +83,35 @@
       .secondSection {
         max-width: 80vw;
         margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .techStack .tech {
+        display: inline-block;
+        margin: 5%;
+        height: 10%;
+        width: 10%;
+      }
+
+      .techStack .tech:hover {
+        opacity: 70%;
       }
     </style>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="left animate__animated animate__slideInLeft">
-          Ayush's Portfolio
-        </div>
+      <nav class="animate__animated animate__slideInLeft">
+        <div class="left">Ayush's Portfolio</div>
         <div class="right">
           <ul>
             <li><a href="/">Home</a></li>
@@ -99,8 +123,9 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <section class="firstSection">
+      <section class="animate__animated animate__slideInLeft firstSection">
         <div class="leftSection">
           Hi,My name is <span class="purple">Ayush</span>
 
@@ -111,8 +136,27 @@
           <img src="bg.png" alt="background-image" />
         </div>
       </section>
-      <section class="secondSection">
-        <h1>Past Experience</h1>
+      <hr />
+      <section class="secondSection animate__animated animate__slideInRight">
+        <p class="text-gray">Techologies</p>
+        <h1>Tech Stack</h1>
+        <div class="techStack">
+          <img class="tech" src="mongo.png" alt="background-image" />
+
+          <img class="tech" src="express.png" style="border-radius: 50%" />
+          <img class="tech" src="react.png" />
+          <img class="tech" src="node.png" />
+        </div>
+        <div class="techStack">
+          <img class="tech" src="html.png" />
+          <img class="tech" src="css.png" />
+          <img class="tech" src="js.png" />
+          <img
+            class="tech"
+            src="Github.png"
+            style="height: 12%; width: 12%; border-radius: 50%"
+          />
+        </div>
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -121,7 +165,7 @@
         strings: [
           "Web Developer.",
           "Web Designer",
-          "&amp; Cyber Security Enthusiast.",
+          "&amp; Cyber Security.",
           "Gamer.",
         ],
         typeSpeed: 50,
