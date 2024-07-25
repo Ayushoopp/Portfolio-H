@@ -3,231 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayush | Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-
-      .text-gray {
-        color: gray;
-      }
-
-      .left {
-        font-size: 1.5rem;
-      }
-
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 130px 0;
-      }
-      .firstSection > div {
-        width: 30%;
-      }
-
-      .leftSection {
-        font-size: 2.2rem;
-      }
-      .rightSection img {
-        width: 80%;
-        margin: 50px 0;
-      }
-      .purple {
-        color: rgb(170, 107, 229);
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        color: rgb(169, 169, 229);
-        font-size: 0.8rem;
-      }
-      #element {
-        color: rgb(170, 107, 228);
-      }
-
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-        height: 80vh;
-      }
-      .secondSection h1 {
-        font-size: 1.9rem;
-      }
-
-      main hr {
-        border: 0;
-        background: #9c97f1;
-        height: 1.2px;
-        margin: 40px 84px;
-      }
-
-      .techStack .tech {
-        display: inline-block;
-        margin: 5%;
-        height: 10%;
-        width: 10%;
-      }
-
-      .techStack .tech:hover {
-        opacity: 70%;
-      }
-
-      footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 30vh;
-        margin-bottom: 0px;
-      }
-
-      footer div ul li {
-        list-style: none;
-        margin: 0 10px;
-        padding: 3%;
-        cursor: pointer;
-      }
-      footer div ul li:hover {
-        color: #9c97f1;
-      }
-
-      footer div h2 {
-        font-weight: bolder;
-      }
-    </style>
+    <title>Ayush | Frontend Engineer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="animate__animated animate__slideInLeft">
-        <div class="left">Ayush's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact me</a></li>
-          </ul>
+    <div id="main">
+      <div id="page1">
+        <nav id="nav">
+          <h1>Ayush Mehrotra</h1>
+          <h5>About</h5>
+          <h5>Projects</h5>
+          <h5>Github</h5>
+          <h5>Github</h5>
+        </nav>
+        <div id="page1-part2">
+          <div id="page1-part2-about">
+            <h1>Frontend Developer</h1>
+          </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="animate__animated animate__slideInLeft firstSection">
-        <div class="leftSection">
-          Hi,My name is <span class="purple">Ayush</span>
-
-          <div>and I am a Passionate</div>
-          <span id="element"></span>
-        </div>
-        <div class="rightSection">
-          <img src="bg.png" alt="background-image" />
-        </div>
-      </section>
-      <hr />
-      <section class="secondSection animate__animated animate__slideInRight">
-        <p class="text-gray">Techologies</p>
-        <h1>Tech Stack</h1>
-        <div class="techStack">
-          <img class="tech" src="mongo.png" alt="background-image" />
-
-          <img
-            class="tech"
-            alt="background-image"
-            src="express.png"
-            style="border-radius: 50%"
-          />
-          <img class="tech" alt="background-image" src="react.png" />
-          <img class="tech" alt="background-image" src="node.png" />
-        </div>
-        <div class="techStack">
-          <img class="tech" alt="background-image" src="html.png" />
-          <img class="tech" alt="background-image" src="css.png" />
-          <img class="tech" alt="background-image" src="js.png" />
-          <img
-            alt="background-image"
-            class="tech"
-            src="Github.png"
-            style="height: 12%; width: 12%; border-radius: 50%"
-          />
-        </div>
-      </section>
-    </main>
-    <br />
-    <br />
-    <hr style="border: 2px; color: white; border-style: double" />
-    <footer>
-      <div><h2>Ayush Portfolio</h2></div>
-      <div class="firstfooter">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+        <img
+          src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
       </div>
-      <div class="secondfooter">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+
+      <div id="page2">
+        <img src="./react-2.svg" alt="" />
       </div>
-      <div class="thirdfooter">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+      <div id="page3">
+        <img
+          src="
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtp2Cy3IwX2dV5bPC433ejdxKsaA5VbDGtg&s
+          "
+          id="img1"
+        />
+        <img
+          id="img2"
+          src="
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvcQyWWgwNrMH29UKXsQcQsO0gV6hGvh0uA&s
+          "
+        />
+        <img
+          id="img3"
+          src="
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX0gO-SXpq1Owd06OlOEguUsjvAGZwMa4eDg&s
+          "
+        />
       </div>
-    </footer>
-    <center>
-      <h5 style="color: grey">Copyright Content By Ayush Mehrotra</h5>
-    </center>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Web Developer.",
-          "Web Designer",
-          "&amp; Cyber Security.",
-          "Gamer.",
-        ],
-        typeSpeed: 50,
-      });
-    </script>
+      <div id="page4">
+        <div id="page4-main">
+          <h1>EXPERIENCE</h1>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="script.js"></script>
 </html>
